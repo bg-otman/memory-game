@@ -1,4 +1,4 @@
-### Memory Game
+# Memory Game
 
 A classic memory game where players test their memory by matching pairs of cards. Challenge yourself with sound effects, a score system, and limited attempts!
 
