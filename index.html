@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="memory-images/memory.png"
+      type="image/x-icon"
+    />
+    <title>Memory Game</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="start-popup">
+        <div class="container">
+          <button>Start</button>
+        </div>
+      </div>
+
+      <div class="win-popup">
+        <div class="container">
+          <span>You Won !</span>
+          <button>Play Again</button>
+        </div>
+      </div>
+
+      <div class="lost-popup">
+        <div class="message">
+          <span>You Lost !</span>
+          <button class="try-again">Try Again</button>
+        </div>
+      </div>
+      <div class="game-info">
+        <div class="sound">
+          <img src="memory-images/volume.png" alt="img" />
+          <audio class="win-audio">
+            <source src="sound/win-sound.mp3" type="audio/mpeg" />
+          </audio>
+          <audio class="fail-audio">
+            <source src="sound/fail.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+        <div class="wrong-tries">Wrong tries: <span>0</span> / 10</div>
+      </div>
+      <div class="main-container">
+        <div class="card" data-picture="cpu">
+          <div class="front">
+            <img src="memory-images/question-mark.png" alt="img" />
+          </div>
+          <div class="back">
+            <img src="memory-images/cpu.png" alt="img" />
+          </div>
+        </div>
+
+        <div class="card" data-picture="cpu">
+          <div class="front">
+            <img src="memory-images/question-mark.png" alt="img" />
+          </div>
+          <div class="back">
+            <img src="memory-images/cpu.png" alt="img" />
+          </div>
+        </div>
+
+        <div class="card" data-picture="building">
+          <div class="front">
+            <img src="memory-images/question-mark.png" alt="img" />
+          </div>
+          <div class="back">
+            <img src="memory-images/building.png" alt="img" />
+          </div>
+        </div>
+
+        <div class="card" data-picture="building">
+          <div class="front">
+            <img src="memory-images/question-mark.png" alt="img" />
+          </div>
+          <div class="back">
+            <img src="memory-images/building.png" alt="img" />
+          </div>
+        </div>
+
+        <div class="card" data-picture="calendar">
+          <div class="front">
+            <img src="memory-images/question-mark.png" alt="img" />
+          </div>
+          <div class="back">
+            <img src="memory-images/calendar.png" alt="img" />
+          </div>
+        </div>
+
+        <div class="card" data-picture="calendar">
+          <div class="front">
+            <img src="memory-images/question-mark.png" alt="img" />
+          </div>
+          <div class="back">
+            <img src="memory-images/calendar.png" alt="img" />
+          </div>
+        </div>
+
+        <div class="card" data-picture="hamburger">
+          <div class="front">
+            <img src="memory-images/question-mark.png" alt="img" />
+          </div>
+          <div class="back">
+            <img src="memory-images/hamburger.png" alt="img" />
+          </div>
+        </div>
+
+        <div class="card" data-picture="hamburger">
+          <div class="front">
+            <img src="memory-images/question-mark.png" alt="img" />
+          </div>
+          <div class="back">
+            <img src="memory-images/hamburger.png" alt="img" />
+          </div>
+        </div>
+
+        <div class="card" data-picture="headphones">
+          <div class="front">
+            <img src="memory-images/question-mark.png" alt="img" />
+          </div>
+          <div class="back">
+            <img src="memory-images/headphones.png" alt="img" />
+          </div>
+        </div>
+
+        <div class="card" data-picture="headphones">
+          <div class="front">
+            <img src="memory-images/question-mark.png" alt="img" />
+          </div>
+          <div class="back">
+            <img src="memory-images/headphones.png" alt="img" />
+          </div>
+        </div>
+
+        <div class="card" data-picture="hourglass">
+          <div class="front">
+            <img src="memory-images/question-mark.png" alt="img" />
+          </div>
+          <div class="back">
+            <img src="memory-images/hourglass.png" alt="img" />
+          </div>
+        </div>
+
+        <div class="card" data-picture="hourglass">
+          <div class="front">
+            <img src="memory-images/question-mark.png" alt="img" />
+          </div>
+          <div class="back">
+            <img src="memory-images/hourglass.png" alt="img" />
+          </div>
+        </div>
+
+        <div class="card" data-picture="location">
+          <div class="front">
+            <img src="memory-images/question-mark.png" alt="img" />
+          </div>
+          <div class="back">
+            <img src="memory-images/location.png" alt="img" />
+          </div>
+        </div>
+
+        <div class="card" data-picture="location">
+          <div class="front">
+            <img src="memory-images/question-mark.png" alt="img" />
+          </div>
+          <div class="back">
+            <img src="memory-images/location.png" alt="img" />
+          </div>
+        </div>
+
+        <div class="card" data-picture="heart">
+          <div class="front">
+            <img src="memory-images/question-mark.png" alt="img" />
+          </div>
+          <div class="back">
+            <img src="memory-images/love-always-wins.png" alt="img" />
+          </div>
+        </div>
+
+        <div class="card" data-picture="heart">
+          <div class="front">
+            <img src="memory-images/question-mark.png" alt="img" />
+          </div>
+          <div class="back">
+            <img src="memory-images/love-always-wins.png" alt="img" />
+          </div>
+        </div>
+
+        <div class="card" data-picture="mushroom">
+          <div class="front">
+            <img src="memory-images/question-mark.png" alt="img" />
+          </div>
+          <div class="back">
+            <img src="memory-images/mushroom.png" alt="img" />
+          </div>
+        </div>
+
+        <div class="card" data-picture="mushroom">
+          <div class="front">
+            <img src="memory-images/question-mark.png" alt="img" />
+          </div>
+          <div class="back">
+            <img src="memory-images/mushroom.png" alt="img" />
+          </div>
+        </div>
+
+        <div class="card" data-picture="robot">
+          <div class="front">
+            <img src="memory-images/question-mark.png" alt="img" />
+          </div>
+          <div class="back">
+            <img src="memory-images/robot.png" alt="img" />
+          </div>
+        </div>
+
+        <div class="card" data-picture="robot">
+          <div class="front">
+            <img src="memory-images/question-mark.png" alt="img" />
+          </div>
+          <div class="back">
+            <img src="memory-images/robot.png" alt="img" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
