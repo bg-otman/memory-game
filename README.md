@@ -16,3 +16,5 @@ A classic memory game where players test their memory by matching pairs of cards
 - HTML5
 - CSS3
 - JavaScript
+
+Preview : https://bg-otman.github.io/memory-game
